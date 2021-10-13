@@ -60,12 +60,12 @@ ul {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 5px solid tomato;
+  margin-left: auto;
+  margin-right: auto;
 }
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  outline: 5px solid tomato;
 }
 /*шапка*/
 .header {
@@ -161,10 +161,10 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--second-title-color);
-  background-color: violet;
 }
 
 .main-btn {
+  display: inline-block;
   width: 200px;
   height: 50px;
   border-radius: 4px;
@@ -188,6 +188,12 @@ ul {
   background-color: var(--hover-color);
 }
 /* наши преимущества*/
+.item-benefits {
+  display: flex;
+}
+.list-benefits:not(:last-child) {
+  margin-right: 30px;
+}
 
 .list-title-benefits {
   margin-bottom: 10px;
@@ -204,11 +210,25 @@ ul {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+/*чем мы занимаемся*/
+.item-activity {
+  display: flex;
+}
+.activity-img:not(:last-child) {
+  margin-right: 30px;
+}
 
 /*наша команда*/
 .team-seaction {
   background-color: var(--third-background-color);
 }
+.item-team {
+  display: flex;
+}
+.team-card:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team-title {
   margin-bottom: 10px;
   font-weight: 500;
@@ -286,6 +306,7 @@ ul {
 
 .address {
   display: block;
+  padding-bottom: 57px;
   font-style: normal;
 }
 
@@ -294,8 +315,14 @@ ul {
 }
 
 .footer-logo {
+  display: block;
+  padding-top: 60px;
   margin-bottom: 20px;
   color: var(--second-header-color);
+}
+
+.adress-list:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .adress-area {
