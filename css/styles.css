@@ -13,6 +13,7 @@
   --third-background-color: #f5f4fa;
   --hover-color: #188ce8;
   --border-header-color: #ececec;
+  --border-portfolio-color: #eeeeee;
 }
 
 body {
@@ -46,6 +47,9 @@ h6,
 ul {
   margin: 0;
   padding: 0;
+}
+img {
+  display: block;
 }
 
 .list {
@@ -95,6 +99,8 @@ ul {
 }
 .header-logo {
   margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .header-logo,
 .footer-logo {
@@ -128,7 +134,7 @@ ul {
   color: var(--accent-text-color);
 }
 
-.menu-link.current {
+.current {
   color: var(--accent-text-color);
 }
 
@@ -166,7 +172,9 @@ ul {
 }
 
 .main-btn {
-  display: inline-block;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
   width: 200px;
   height: 50px;
@@ -244,7 +252,10 @@ ul {
 .team-card:not(:last-child) {
   margin-right: 30px;
 }
-
+.staff {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team-title {
   margin-bottom: 10px;
   font-weight: 500;
@@ -255,12 +266,8 @@ ul {
   text-align: center;
   color: var(--primary-title-color);
 }
-.team-img {
-  margin-bottom: 30px;
-}
 
 .team-text {
-  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -277,10 +284,12 @@ ul {
 }
 /*фильтр портфолио*/
 .item-menu-filters {
-  display: inline-block;
+  display: block;
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .menu-list-filters:not(:last-child) {
   margin-right: 8px;
@@ -309,16 +318,30 @@ ul {
 .item-projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+.list-projects {
+  flex-basis: calc(100% / 9-30px);
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .title-img {
+  margin-bottom: 4px;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   /* identical to box height, or 200% */
   letter-spacing: 0.06em;
   color: var(--primary-title-color);
+}
+
+.project-description {
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  border: 1px solid var(--border-portfolio-color);
 }
 
 .text-projects {
