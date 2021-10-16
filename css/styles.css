@@ -160,7 +160,8 @@ img {
 }
 
 .main-title {
-  margin-bottom: 30px;
+  width: 696px;
+  margin: 0 auto 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -173,8 +174,7 @@ img {
 
 .main-btn {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding: 10px 32px;
   min-width: 200px;
   border-radius: 4px;
@@ -185,7 +185,7 @@ img {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  text-align: center;
+
   /* identical to box height, or 187% */
   color: var(--second-text-color);
 
@@ -225,7 +225,7 @@ img {
   color: var(--primary-text-color);
 }
 /*чем мы занимаемся*/
-.section-litle {
+.section-title {
   margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
@@ -294,9 +294,8 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
 }
+
 .menu-list-filters:not(:last-child) {
   margin-right: 8px;
 }
@@ -349,13 +348,9 @@ img {
 }
 
 .project-description {
-  padding-top: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 20px;
-  border-right: 1px solid var(--border-portfolio-color);
-  border-bottom: 1px solid var(--border-portfolio-color);
-  border-left: 1px solid var(--border-portfolio-color);
+  padding: 20px 24px 20px;
+  border: 1px solid var(--border-portfolio-color);
+  border-top: none;
 }
 
 .text-projects {
@@ -370,7 +365,6 @@ img {
 
 .address {
   display: block;
-
   font-style: normal;
 }
 
@@ -382,7 +376,6 @@ img {
 
 .footer-logo {
   display: block;
-
   margin-bottom: 20px;
   color: var(--second-header-color);
 }
